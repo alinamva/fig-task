@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "team": "RUS",
+      "icon": "/src/assets/russia.png",
+      "bib": 212,
+      "name": "Bonartsev Aleksandr",
+      "d": 43.883,
+      "e": 43.883,
+      "p": 43.883,
+
+      "Pen": 43.883,
+      "Total": 102.256
+    },
+    {
+      "rank": 2,
+      "team": "EST",
+      "icon": "/src/assets/est.png",
+      "bib": 132,
+      "name": "Bonartsev Aleksandr",
+      "d": 43.883,
+      "e": 43.883,
+      "p": 43.883,
+
+      "Pen": 43.883,
+      "Total": 102.256
+    },
+    {
+      "rank": 3,
+      "team": "POR",
+      "icon": "/src/assets/por.png",
+      "bib": 132,
+      "name": "Bonartsev Aleksandr",
+      "d": 43.883,
+      "e": 43.883,
+      "p": 43.883,
+
+      "Pen": 43.883,
+      "Total": 102.256
+    },
+    {
+      "rank": 4,
+      "team": "ISR",
+      "icon": "/src/assets/isr.png",
+      "bib": 132,
+      "name": "Bonartsev Aleksandr",
+      "d": 43.883,
+      "e": 43.883,
+      "p": 43.883,
+
+      "Pen": 43.883,
+      "Total": 102.256
+    },
+    {
+      "rank": 5,
+      "team": "POL",
+      "icon": "/src/assets/pol.png",
+      "bib": 132,
+      "name": "Bonartsev Aleksandr",
+      "d": 43.883,
+      "e": 43.883,
+      "p": 43.883,
+
+      "Pen": 43.883,
+      "Total": 102.256
+    },
+    {
+      "rank": 6,
+      "team": "NED",
+      "icon": "/src/assets/ned.png",
+      "bib": 132,
+      "name": "Bonartsev Aleksandr",
+      "d": 43.883,
+      "e": 43.883,
+      "p": 43.883,
+      "Pen": 43.883,
+      "Total": 102.256
+    },
+    {
+      "rank": 7,
+      "team": "GBR",
+      "icon": "/src/assets/gbr.png",
+      "bib": 132,
+      "name": "Bonartsev Aleksandr",
+      "d": 43.883,
+      "e": 43.883,
+      "p": 43.883,
+
+      "Pen": 43.883,
+      "Total": 102.256
+    }
+  ]
+}

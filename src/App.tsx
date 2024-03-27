@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Filter from "./pages/components/Filter";
+import Heading from "./pages/components/Heading";
+import Navigation from "./pages/components/Navigation";
+import Live from "./pages/Live";
+import Results from "./pages/Results";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeNavItem, setActiveNavItem] = useState("Results");
 
+  const handleNavClck = (navItem: string) => {
+    setActiveNavItem(navItem);
+  };
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="flex flex-col min-h-screen gap-12 px-6 py-8 text-white md:gap-24 sm:px-20 sm:py-24 bg-bg">
+        <div className="flex flex-col gap-12">
+          <Heading />
+          <Navigation handleNavClck={handleNavClck} />
+          <Filter />
+        </div>
+        <div>
+          {activeNavItem === "Results" && <Results />}
+          {activeNavItem === "Live" && <Live />}
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
