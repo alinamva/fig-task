@@ -13,22 +13,26 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../../components/ui/accordion";
+import Filter from "../components/Filter";
 
 // import line from "../../assets/line.png";
-
-const Results = () => {
+export type AccordionProps = {
+  handleAccordionClick: (index: any) => void;
+};
+const Results: React.FC<AccordionProps> = ({ handleAccordionClick }) => {
   return (
-    <div>
-      <Table className="hidden md:block">
+    <div className="flex flex-col gap-6 md:gap-24">
+      <Filter />
+      <Table className="hidden md:table ">
         <TableHeader>
-          <TableRow className="text-white border-none">
+          <TableRow className="text-white border-none ">
             <TableHead className="w-[100px]">Rank</TableHead>
             <TableHead>Team</TableHead>
             <TableHead>Bib</TableHead>
             <TableHead>Name</TableHead>
             <TableHead>D</TableHead>
             <TableHead>E</TableHead>
-            <TableHead>Pen</TableHead>
+            <TableHead>P</TableHead>
             <TableHead>Total</TableHead>
           </TableRow>
         </TableHeader>
@@ -38,42 +42,47 @@ const Results = () => {
               // <div className="w-full">
               <TableRow
                 key={item.team}
-                className="border-none"
+                className="border-none "
               >
-                <TableCell className="h-full">
+                <TableCell>
                   <div className="flex items-center justify-center bg-blue size-8">
                     <span>{item.rank}</span>
                   </div>
                 </TableCell>
-                <TableCell className="flex gap-3">
-                  <img src={item.icon} />
-                  {item.team}
+                <TableCell>
+                  <div className="flex gap-3">
+                    <img
+                      src={item.icon}
+                      className="w-auto h-auto"
+                    />
+                    <label>{item.team}</label>
+                  </div>
                 </TableCell>
                 <TableCell>{item.bib}</TableCell>
                 <TableCell>{item.name}</TableCell>
                 <TableCell>
                   <div className="flex flex-col gap-3">
-                    <span>{item.d}</span>
-                    <span>{item.d}</span>
+                    <div>{item.d}</div>
+                    <div>{item.d}</div>
                   </div>
                 </TableCell>
                 <TableCell>
                   <div className="flex flex-col gap-3">
-                    <span>{item.e}</span>
-                    <span>{item.e}</span>
+                    <div>{item.e}</div>
+                    <div>{item.e}</div>
                   </div>
                 </TableCell>
                 <TableCell>
                   <div className="flex flex-col gap-3">
-                    <span>{item.Pen}</span>
-                    <span>{item.Pen}</span>
+                    <div>{item.p}</div>
+                    <div>{item.p}</div>
                   </div>
                 </TableCell>
                 <TableCell>
                   <div className="flex flex-col gap-3">
-                    <span>{item.Total}</span>
-                    <span>{item.Total}</span>
-                    <span className="text-orangeText">{item.Total}</span>
+                    <div>{item.Total}</div>
+                    <div>{item.Total}</div>
+                    <div className="text-orangeText">{item.Total}</div>
                   </div>
                 </TableCell>
               </TableRow>
@@ -91,17 +100,21 @@ const Results = () => {
         collapsible
         className="flex flex-col gap-5 md:hidden"
       >
-        {data.data.map((item) => {
+        {data.data.map((item, index) => {
           const splitted = item.name.split(" ");
           const lastName = splitted[0];
           const firstName = splitted[1][0];
           const formatted = lastName + " " + firstName + ".";
           return (
             <AccordionItem
-              value="item-1"
+              value={`item-${index}`}
+              key={index}
               className="border-none rounded-lg bg-darkBlue"
             >
-              <AccordionTrigger className="px-3 border-b border-black">
+              <AccordionTrigger
+                className="px-3 border-b border-black"
+                onClick={() => handleAccordionClick(index)}
+              >
                 <div className="flex items-center justify-center bg-blue size-8">
                   <span>{item.rank}</span>
                 </div>

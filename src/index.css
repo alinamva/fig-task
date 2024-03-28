@@ -21,3 +21,15 @@ ul div {
 ul div:hover {
   border-bottom: 1px solid #0a8bec;
 }
+td {
+  cursor: pointer;
+  padding: 0;
+}
+/* td div {
+  margin-bottom: 12px;
+} */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}

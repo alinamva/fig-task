@@ -1,7 +1,7 @@
 import arrow from "../../assets/arrow-narrow-left.png";
 const Heading = () => {
   return (
-    <div className="flex  justify-start items-start gap-4">
+    <div className="flex items-start justify-start gap-4">
       <img
         src={arrow}
         alt="arrow"

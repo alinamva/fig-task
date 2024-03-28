@@ -1,4 +1,12 @@
-const Navigation = (handleNavClck, activeNav) => {
+type NavigationProps = {
+  handleNavClick: (navItem: string) => void;
+  activeNav: string;
+};
+
+const Navigation: React.FC<NavigationProps> = ({
+  handleNavClick,
+  activeNav,
+}) => {
   return (
     <div className="overflow-x-auto border-b-2 border-darkBlue">
       <ul className="flex justify-start w-full gap-6 text-center sm:justify-around sm:w-auto">
@@ -9,7 +17,7 @@ const Navigation = (handleNavClck, activeNav) => {
         >
           <li
             className="flex items-center justify-center gap-3"
-            onClick={() => handleNavClck("Live")}
+            onClick={() => handleNavClick("Live")}
           >
             <div className="w-2 h-2 rounded-full bg-red"></div>
             <label>Live</label>
@@ -19,12 +27,12 @@ const Navigation = (handleNavClck, activeNav) => {
           className={`${
             activeNav === "Starlist" && "border-b border-blue"
           } min-w-36`}
-          onClick={() => handleNavClck("Starlist")}
+          onClick={() => handleNavClick("Starlist")}
         >
           <li>Starlist</li>
         </div>
         <div
-          onClick={() => handleNavClck("Schedule")}
+          onClick={() => handleNavClick("Schedule")}
           className={`${
             activeNav === "Schedule" && "border-b border-blue"
           } min-w-36`}
@@ -32,7 +40,7 @@ const Navigation = (handleNavClck, activeNav) => {
           <li>Schedule</li>
         </div>
         <div
-          onClick={() => handleNavClck("Results")}
+          onClick={() => handleNavClick("Results")}
           className={`${
             activeNav === "Results" && "border-b border-blue"
           } min-w-36`}
@@ -40,7 +48,7 @@ const Navigation = (handleNavClck, activeNav) => {
           <li>Results</li>
         </div>
         <div
-          onClick={() => handleNavClck("Medals")}
+          onClick={() => handleNavClick("Medals")}
           className={`${
             activeNav === "Medals" && "border-b border-blue"
           } min-w-36`}

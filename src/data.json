@@ -9,9 +9,15 @@
       "d": 43.883,
       "e": 43.883,
       "p": 43.883,
-
-      "Pen": 43.883,
-      "Total": 102.256
+      "Total": 102.256,
+      "app": 12.5,
+      "aa": 102.36,
+      "teamScore": 102.36,
+      "field": {
+        "img": "/src/assets/fx.png",
+        "title": "Fx"
+      },
+      "status": "None"
     },
     {
       "rank": 2,
@@ -22,9 +28,12 @@
       "d": 43.883,
       "e": 43.883,
       "p": 43.883,
-
-      "Pen": 43.883,
-      "Total": 102.256
+      "Total": 102.256,
+      "app": 12.5,
+      "aa": 102.36,
+      "teamScore": 102.36,
+      "field": { "img": "/src/assets/horse.png", "title": "Horse" },
+      "status": "Wait"
     },
     {
       "rank": 3,
@@ -35,9 +44,15 @@
       "d": 43.883,
       "e": 43.883,
       "p": 43.883,
-
-      "Pen": 43.883,
-      "Total": 102.256
+      "Total": 102.256,
+      "app": 12.5,
+      "aa": 102.36,
+      "teamScore": 102.36,
+      "field": {
+        "img": "/src/assets/Rings.png",
+        "title": "Rings"
+      },
+      "status": "None"
     },
     {
       "rank": 4,
@@ -48,9 +63,15 @@
       "d": 43.883,
       "e": 43.883,
       "p": 43.883,
-
-      "Pen": 43.883,
-      "Total": 102.256
+      "Total": 102.256,
+      "app": 12.5,
+      "aa": 102.36,
+      "teamScore": 102.36,
+      "field": {
+        "img": "/src/assets/vault.png",
+        "title": "Vault"
+      },
+      "status": "Go"
     },
     {
       "rank": 5,
@@ -61,9 +82,16 @@
       "d": 43.883,
       "e": 43.883,
       "p": 43.883,
+      "Total": 102.256,
+      "app": 12.5,
+      "aa": 102.36,
+      "teamScore": 102.36,
 
-      "Pen": 43.883,
-      "Total": 102.256
+      "field": {
+        "img": "/src/assets/parallel-bars.png",
+        "title": "Parallel bars"
+      },
+      "status": "None"
     },
     {
       "rank": 6,
@@ -74,8 +102,15 @@
       "d": 43.883,
       "e": 43.883,
       "p": 43.883,
-      "Pen": 43.883,
-      "Total": 102.256
+      "Total": 102.256,
+      "app": 12.5,
+      "aa": 102.36,
+      "teamScore": 102.36,
+      "field": {
+        "img": "/src/assets/horizontal-bar.png",
+        "title": "Horizontal bars"
+      },
+      "status": "None"
     },
     {
       "rank": 7,
@@ -86,9 +121,15 @@
       "d": 43.883,
       "e": 43.883,
       "p": 43.883,
-
-      "Pen": 43.883,
-      "Total": 102.256
+      "Total": 102.256,
+      "app": 12.5,
+      "aa": 102.36,
+      "teamScore": 102.36,
+      "field": {
+        "img": "/src/assets/parallel-bars.png",
+        "title": "Parallel bars"
+      },
+      "status": "None"
     }
   ]
 }

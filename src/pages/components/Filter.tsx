@@ -5,7 +5,6 @@ import vault from "../../assets/vault.png";
 import parrallelBars from "../../assets/parallel-bars.png";
 import horizontalBar from "../../assets/horizontal-bar.png";
 import { useState } from "react";
-
 const images = [
   { title: "Floor exercise", img: fx },
   { title: "Hommel horse", img: horse },
@@ -42,10 +41,10 @@ const Filter = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-around gap-16">
-          {images.map((image) => (
+          {images.map((image, index) => (
             <div
-              className="flex flex-col items-center gap-2"
-              key={image.title}
+              className="flex flex-col gap-2 images-center"
+              key={index}
               onClick={() => handleTitle(image.title)}
             >
               <img
